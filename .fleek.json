@@ -1,3 +1,14 @@
 {
-    "publicDir": "dist"
+  "site": {
+    "id": "fd6c0a2a-10de-499f-a7f3-136bf0833219",
+    "team": "90f1b36e-adb9-40d6-a419-8c64a64aff0a",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "tiny-band-8831"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "dist",
+    "rootDir": ""
+  }
 }

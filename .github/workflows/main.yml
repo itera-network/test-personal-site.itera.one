@@ -7,9 +7,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy test site
-        id: deploy
-        uses: fleekhq/action-deploy@v1
+        id: fleek
+        uses: itera-network/action-deploy@master
         with:
           apiKey: ${{ secrets.FLEEK_API_KEY }}
       - name: Get the output url
-        run: echo "Deploy url is ${{ steps.deploy.outputs.deployUrl }}"
+        run: echo "Deploy url is ${{ steps.fleek.outputs.deployUrl }}"
+      - uses: XueMoMo/actions-coudflare-dns@v1.0.1
+        with:
+          name: ${{ github.event.repository.name }}
+          cid: ${{ steps.fleek.outputs.siteCid }}
+          token: ${{ secrets.CF_API_TOKEN }}
+          zone: ${{ secrets.CF_ZONE_ID }}

@@ -1,0 +1,6 @@
+publishing files in /Users/thomas/www/dtco.co/test-personal-site.itera.one/dist to IPFS
+packaging site contents...
+uploading...
+Site cid is QmYZMxAihRhT54hf7eZjHE9wPxg5f1LqSZW4taG1DnHhU4
+New deployment has been triggered.
+View deployment here: https://app.fleek.co/#/sites/tiny-band-8831/deploys/2021-12-09T06:29:14.609Z?accountId=90f1b36e-adb9-40d6-a419-8c64a64aff0a
